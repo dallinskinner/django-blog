@@ -1,0 +1,8 @@
+<article class="comment">
+    <header>
+        <p><img src="{{ comment.gravatar_url }}">{{ comment.get_author_name }}</p>
+        <p>{{ comment.created_at|date }}</p>
+    </header>
+
+    <p>{{ comment.content }}</p>
+</article>
